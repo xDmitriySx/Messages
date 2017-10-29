@@ -1,0 +1,195 @@
+.main{
+	width: 489px;
+	height: 900px;
+	border: 1px solid #5de5e2;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.person{
+	width: 123px;
+	height: 124px;
+	border-radius: 100%;
+	background-image: url(face.png);
+	margin-top: 14px;
+	margin-left: 19px;
+	position: absolute;
+	z-index: 1000;
+}
+
+.field{
+	width: 366px;
+	height: 57px;
+	box-shadow: 0 0 0 1px rgba(60, 44, 0, 0.25);
+	background-color: #fffbc8;
+	margin-left: 104px;
+	margin-right: 19px;
+	margin-top: 6px;
+}
+
+.name{
+	width: 149px;
+	height: 34px;
+	margin-bottom: 7px;
+	margin-top: 25px;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+.fsname{
+	color: #333333;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.manager{
+	font-size: small;
+}
+
+span.offers{
+	margin-left: 40px;
+	margin-top: 14px;
+	margin-bottom: 5px;
+}
+
+.service{
+	
+	width: 53px;
+	height: 23px;
+	margin-top: 12px;
+	margin-left: 403px;
+}
+
+.commentfield {
+	border: 1px solid black;
+	width: 452px;
+	height: 68px;
+	margin-top: 50px;
+	margin-left: 18px;
+	margin-right: 18px;
+
+}
+
+.fieldforothercomments{
+	width: 452px;
+	height: 368px;
+	margin-top: 50px;
+	margin-left: 18px;
+	margin-right: 18px;
+    overflow-y: hidden;
+}
+
+#button{
+	margin-left: 50%;
+	margin-right: 50%;
+}
+
+.button_fond{
+	display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+	margin-top: 15px;
+	margin-left: 110px;
+	width: 280px;
+	height: 37px;
+	border-radius: 100px;
+	background-color: orange;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: large;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+
+
+#form{
+	margin-top: 30px;
+	margin-left: 20px;
+}
+
+.commentscreating {
+	width: 99%;
+	height: auto;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+	border: 1px solid rgba(0, 0, 0, 0.19);
+	background-color: #f2fbff;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+
+
+#textarea{
+	margin-top: 30px;
+	width: 443px;
+	height: 68px;
+}
+
+.table{
+	margin-top: 13px;
+}
+
+
+.schedule{
+	width: 319px;
+	height: 106px;
+	margin-top: 5px;
+	margin-left: 148px;
+	margin-right: 18px;
+	border: 1px solid rgba(190, 173, 173, 0.5);
+	border-left: none;
+	border-right: none;
+}
+
+.schedule_1{
+	margin-top: -4px;
+	width: 222px;
+	height: 27px;
+	background-color: #94e171;
+	border-radius: 4%;
+	z-index: -10;
+	position: absolute;
+}
+
+.schedule_2{
+	margin-top: -4px;
+	width: 55px;
+	height: 27px;
+	background-color: #71dee1;
+	border-radius: 4%;
+	z-index: -10;
+	position: absolute;
+}
+
+.schedule_3{
+	margin-top: -4px;
+	width: 33px;
+	height: 27px;
+	background-color: #96eadc;
+	border-radius: 4%;
+	z-index: -10;
+	position: absolute;
+}
+
+.user_name{
+	font-family: sans-serif;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-top: 15px;
+}
+
+.sch{
+	z-index: 1;
+	margin-top: 13px;
+	margin-right: 120px;
+	cursor: pointer;
+}
+
+
+.td {
+    border: 5px solid white;
+    border-right: none;
+    border-left: none;
+}
