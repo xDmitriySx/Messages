@@ -2,134 +2,80 @@
 <html>
 <head>
 	<title>Message</title>
-		<meta charset="utf-8" />
+	<meta charset="utf-8" />
 	<meta name="vievport" content="width=device-width, initial-scale=1, user-scalable=no, maximu-scale=1">
 	<link rel="stylesheet" href="style.css">
-	
-	
 </head>
 <body>
 
-<div class="main"> 
+	<div class="main"> 
 
-	<div class="person"> </div>
-	<div class="name"> 
-<span class="fsname"> Вероника Ростова</span> <br>
-<span class="manager"> Менеджер по продажам</span>
+		<div class="person"> </div>
+		<div class="name"> 
+			<span class="fsname"> Вероника Ростова</span> <br>
+			<span class="manager"> Менеджер по продажам</span>
 
-	 </div>
-	<div class="field">
-<span class="offers">Подберу для вас самые лучшие предложения.</span>
-<span style="margin-left:40px"> Мои услуги абсолютно бесплатны</span>
-	 </div>
+		</div>
+		<div class="field">
+			<span class="offers">Подберу для вас самые лучшие предложения.</span>
+			<span style="margin-left:40px"> Мои услуги абсолютно бесплатны</span>
+		</div>
 
-<div class="service"><span>Услуг</span></div>
-<div class="schedule">
-	
- <table class="table">
-  <tr>	
-  	<td class="td"><div class="schedule_1"></div><span class="sch">Ручное бронирование</span></td>
-  	<td><span>11</span></td>
-  </tr>
-  <tr>
-  	<td><div class="schedule_2"></div><span class="sch">Пакетные туры</span></td>
-  	<td><span>3</span></td>
-  </tr>
-  <tr>
-  	<td class="td"><div class="schedule_3"></div><span class="sch">Отели</span></td>
-  	<td><span>1</span></td>
-  </tr>
- </table>
+		<div class="service"><span>Услуг</span></div>
+		<div class="schedule">
+			<table class="table">
+				<tr>	
+					<td class="td"><div class="schedule_1"></div><span class="sch">Ручное бронирование</span></td>
+					<td><span>11</span></td>
+				</tr>
+				<tr>
+					<td><div class="schedule_2"></div><span class="sch">Пакетные туры</span></td>
+					<td><span>3</span></td>
+				</tr>
+				<tr>
+					<td class="td"><div class="schedule_3"></div><span class="sch">Отели</span></td>
+					<td><span>1</span></td>
+				</tr>
+			</table>
+		</div>
+
+		<!--Field for comments-->
+
+		<div class="fieldforothercomments" id="input" onmouseover="scrollAppear (this)" onmouseout="scrollDisappear (this)">
+
+			<div class="user_name">NAME</div>
+			<div>22 октября 2017</div>
+			<div class="commentscreating">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.
+			</div>
+
+			<div class="user_name">NAME</div>
+			<div>22 октября 2017</div>
+
+
+			<div class="commentscreating">
+			Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+			</div>
+
+
+		</div>
+
+		<form 
+		name="form" action="#" method="post" id="form" onsubmit="return false" onkeypress="ctrlEnter(event, this);">
+		<textarea id="textarea" cols="55" rows="5"></textarea> <br/>
+
+	</form>
+
+	<div class="button_fond" id="done">
+		<span>Написать консультанту</span>
+	</div>
 
 </div>
-<div class="fieldforothercomments" id="input" onmouseover="scrollAppear (this)" onmouseout="scrollDisappear (this)">
-	
-<div class="user_name">NAME</div>
-<div>22 октября 2017</div>
-<div class="commentscreating">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat.</div>
 
-<div class="user_name">NAME</div>
-<div>22 октября 2017</div>
-<div class="commentscreating">
-Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</div>
-
-
-</div>
-
-<form 
-name="form" action="#" method="post" id="form" onsubmit="return false" onkeypress="ctrlEnter(event, this);">
-<textarea id="textarea" cols="55" rows="5"></textarea> <br/>
-
-</form>
-
-<div class="button_fond" id="done">
-	<span>Написать консультанту</span>
-</div>
-
-</div>
-
-<script>
-
-	function ctrlEnter(event, formElem) //функция которая отправляет комментарий сочетанием клавиш Ctrl + Enter;
-	{
-		if ((event.ctrlKey) && ((event.keyCode == 0xA) || (event.keyCode == 0xD))) {
-			start();
-		}
-	}
-
-	function scrollAppear() {
-		var scrollField = document.getElementById("input");
-		scrollField.style.overflowY = "scroll";
-	}
-
-	function scrollDisappear() {
-		var scrollField = document.getElementById("input");
-		scrollField.style.overflowY = "hidden";
-	}
-
-	function start() {
-
-		var arr = ["января", "февраля", "марта", "апреля",
-			"мая", "июня", "июля", "августа",
-			"сентября", "октября", "ноября", "декабря"
-		];
-
-		var date = new Date();
-		var time = date.getDate() + " " + arr[date.getMonth()] + " " + date.getFullYear();
-		/*date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds(); если нужно добавить время в виде часы:минуты:секунды*/
-
-		var name = document.createElement("div");
-			name.textContent = "NAME";
-			name.setAttribute("class", "user_name");
-		var div = document.getElementById("input");
-			div.appendChild(name);
-
-		var dt = document.createElement("div");
-			dt.textContent = time;
-
-			div.appendChild(dt);
-		var dc = document.createElement("div");
-		var comment = document.getElementById("textarea").value;
-			dc.textContent = comment;
-
-			dc.setAttribute("class", "commentscreating");
-			div.appendChild(dc);
-			/*var r = document.createElement("hr");
-			div.appendChild(r);*/
-
-		var comment = document.getElementById("textarea").value;
-		var p = document.createElement('p');
-			p.textContent = comment;
-			document.getElementById('textarea').value = ''; // очищает поле ввода текста.
-	};
-
-	var button = document.getElementById("done");
-	button.addEventListener("click", start);
-</script>
+<script src="main.js"></script>
 
 </body>
 </html>
